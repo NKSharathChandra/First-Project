@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Convert JSONL to CSV') {
+            steps {
+                script {
+                    // Example using python
+                    sh 'python path/to/jsonl_to_csv.py input.jsonl output.csv'
+                }
+            }
+        }
+    }
+}
