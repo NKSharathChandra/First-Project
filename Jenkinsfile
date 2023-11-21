@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Example using python
-                    sh 'python path/to/jsonl_to_csv.py input.jsonl output.csv'
+                    sh 'python3 /home/sharath/Downloads/INDIA.py /home/sharath/Downloads/MIMS India output.csv'
                 }
             }
         }
